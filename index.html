@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Internship Board</h1>
+        <p>Find your next learning opportunity</p>
+    </header>
+
+    <main>
+      
+<section class="search-section">
+    <h2>Explore Internships</h2>
+
+    <label for="searchInput">Search internships</label>
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search internships..."
+    >
+    <button type="button" id="clearSearch">Clear Search</button>
+
+    <label for="domainFilter">Filter by domain</label>
+
+<select id="domainFilter">
+    <option value="all">All Domains</option>
+    <option value="Full Stack Development">Full Stack Development</option>
+    <option value="UI/UX">UI/UX</option>
+    <option value="Data Analytics">Data Analytics</option>
+    <option value="Cyber Security">Cyber Security</option>
+</select>
+
+</section>
+
+<p id="resultCount" aria-live="polite"></p>
+<section id="internshipList" class="internship-list"></section>
+    </main>
+
+    <footer>
+        <p>© 2026 Internship Board. Built by Sowmiya.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
